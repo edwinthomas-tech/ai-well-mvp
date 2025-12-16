@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Well Health & Maintenance Advisory System</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Malayalam -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam&display=swap" rel="stylesheet">
+
+  <!-- Retro / Terminal -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Serif (fallback / body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card" role="main">
+
+    <!-- Title -->
+    <h1 class="title">
+      <span class="malayalam">എന്റെ കിണർ</span>
+      <span class="english">AI WELL INSPECTION</span>
+    </h1>
+
+    <!-- File Upload -->
+    <label class="upload-box" aria-label="Upload well image">
+      FILE UPLOAD (tap here)
+      <input type="file" id="imageInput" accept="image/*">
+    </label>
+
+    <!-- Image Preview -->
+    <img id="preview" alt="Uploaded well preview" style="display:none;" />
+
+    <!-- Progress -->
+    <div id="progressContainer" class="well-progress" aria-hidden="true">
+      <div id="progressWater"></div>
+      <div id="progressText">0%</div>
+    </div>
+
+    <!-- Analyze Button -->
+    <button id="analyzeBtn" class="analyze-btn" type="button">
+      ANALYSE NOW
+    </button>
+
+    <h2 class="section-title">RESULTS</h2>
+
+    <div class="result-box">
+      <div id="statusHeader"></div>
+      <pre id="output">the results are here</pre>
+    </div>
+
+    <div class="meta-footer" id="metaFooter"></div>
+
+    <p class="footer-text">
+     © Developed with love by <strong>Real Fighters</strong> in <strong>GDG VJCET</strong> ❤️
+    </p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
